@@ -36,6 +36,7 @@ fun! s:initGitRebase()
   nmap <script><silent><buffer> s :cal <SID>RebaseAction('squash')<CR>
   nmap <script><silent><buffer> e :cal <SID>RebaseAction('edit')<CR>
   nmap <script><silent><buffer> r :cal <SID>RebaseAction('reword')<CR>
+  nmap <script><silent><buffer> f :cal <SID>RebaseAction('fixup')<CR>
   nmap <script><silent><buffer> ? :cal <SID>showHelp()<CR>
   nmap <script><silent><buffer> D dd
 endf
@@ -47,6 +48,7 @@ fun! s:showHelp()
   echo "   e   - edit"
   echo "   s   - squash"
   echo "   r   - reword"
+  echo "   f   - fixup"
   echo "   D   - delete"
 endf
 aug GitRebase
